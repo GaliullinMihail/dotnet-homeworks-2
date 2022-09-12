@@ -57,5 +57,15 @@ namespace Hw1Tests
             //assert
             Assert.Throws<ArgumentException>(() => Parser.ParseCalcArguments(args, out _, out _, out _));
         }
+        
+        [Fact]
+        public void TestParserUndefinedOperation()
+        {
+            // arrgane
+            var args = new[] { "4", "_", "5" };
+            
+            //assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => Parser.ParseCalcArguments(args, out _, out _, out _));
+        }
     }
 }
