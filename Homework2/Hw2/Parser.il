@@ -7,6 +7,8 @@
         [out] float64& value2) 
         cil managed
     {
+        .maxstack 3
+        
         //args == null
         ldarg.0
         brfalse.s badArguments
@@ -24,14 +26,6 @@
         call bool [System.Runtime]System.Double::TryParse(string, float64&)
         brfalse.s badArguments
         
-        //parsing value2
-        ldarg.0
-        ldc.i4.2
-        ldelem.ref
-        ldarg.3
-        call bool [System.Runtime]System.Double::TryParse(string, float64&)
-        brfalse.s badArguments
-        
         //parsing operation
         ldarg.2
         ldarg.0
@@ -39,6 +33,14 @@
         ldelem.ref
         call valuetype Hw2.CalculatorOperation Hw2.Parser::ParseOperation(string)
         stind.i1
+        
+        //parsing value2
+        ldarg.0
+        ldc.i4.2
+        ldelem.ref
+        ldarg.3
+        call bool [System.Runtime]System.Double::TryParse(string, float64&)
+        brfalse.s badArguments
         
         ret
         
@@ -127,7 +129,6 @@
 
         //return
         endOfMethod:
-        
         stloc.0
         ldloc.0
         ret    
