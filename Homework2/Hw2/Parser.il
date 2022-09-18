@@ -63,32 +63,37 @@
         .maxstack 3
         .locals init ([0] valuetype Hw2.CalculatorOperation)
 
+        //addition
         ldstr "+"
         ldarg.0
         call bool [System.Runtime]System.String::op_Equality(string, string)
         brtrue.s addOperation
 
+        //substract
         ldstr "-"
         ldarg.0
         call bool [System.Runtime]System.String::op_Equality(string, string)
         brtrue.s substractOperation
 
+        //multiply
         ldstr "*"
         ldarg.0
         call bool [System.Runtime]System.String::op_Equality(string, string)
         brtrue.s multiplyOperation
 
+        //divide
         ldstr "/"
         ldarg.0
         call bool [System.Runtime]System.String::op_Equality(string, string)
         brtrue.s divideOperation
 
+        //undefined
         ldstr "_"
         ldarg.0
         call bool [System.Runtime]System.String::op_Equality(string, string)
         brtrue.s undefinedOperation
         
-        
+        //not operation
         br.s badOperation
 
 
@@ -120,8 +125,8 @@
         newobj instance void [System.Runtime]System.InvalidOperationException::.ctor()
         throw
 
-        endOfMethod
-        :
+        //return
+        endOfMethod:
         
         stloc.0
         ldloc.0
