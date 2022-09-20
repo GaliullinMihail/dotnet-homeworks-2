@@ -12,5 +12,5 @@ jobs:
       with:
         artifact: test-results            # artifact name
         name: test-report                  # Name of the check run which will be created
-        path: 'Homework1/Hw1.Tests/TestResults/mihai_IMARION_2022-09-20_15_21_44.trx'                     # Path to test results (inside artifact .zip)
+        path: 'Homework*/Hw*.Tests/TestResults/*.trx'                     # Path to test results (inside artifact .zip)
         reporter: dotnet-trx              # Format of test results
