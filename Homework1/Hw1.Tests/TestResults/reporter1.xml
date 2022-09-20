@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ec5dd505-1d23-4eca-8b22-81df8fa66c2c" name="mihai@IMARION 2022-09-20 16:35:04" runUser="IMARION\mihai" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-09-20T16:35:04.6038903+03:00" queuing="2022-09-20T16:35:04.6038907+03:00" start="2022-09-20T16:35:02.3147692+03:00" finish="2022-09-20T16:35:04.6568208+03:00" />
+  <TestSettings name="default" id="599b4545-90b4-4b23-9965-137eaa788fc0">
+    <Deployment runDeploymentRoot="mihai_IMARION_2022-09-20_16_35_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2add1572-9316-4d9e-bf2e-603fd00be056" testId="f6435553-fecd-a0ce-1346-3c6cc417e1f7" testName="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;-&quot;, operationExpected: Minus)" computerName="IMARION" duration="00:00:00.0031315" startTime="2022-09-20T16:35:04.5541463+03:00" endTime="2022-09-20T16:35:04.5541464+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2add1572-9316-4d9e-bf2e-603fd00be056" />
+    <UnitTestResult executionId="f2a29ac0-1d1b-4d6c-8695-f108165d5d3f" testId="41e4452c-2bea-a7aa-ee23-05eae9994b8a" testName="Hw1Tests.ParserTests.TestParserUndefinedOperation" computerName="IMARION" duration="00:00:00.0003328" startTime="2022-09-20T16:35:04.5558735+03:00" endTime="2022-09-20T16:35:04.5558735+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2a29ac0-1d1b-4d6c-8695-f108165d5d3f" />
+    <UnitTestResult executionId="cac08360-ab32-4e45-93f2-cb01001419e0" testId="6c7c9f25-5265-c983-8373-889ec0ed368e" testName="Hw1Tests.CalculatorTests.TestDividingZeroByNonZero" computerName="IMARION" duration="00:00:00.0001050" startTime="2022-09-20T16:35:04.5541263+03:00" endTime="2022-09-20T16:35:04.5541264+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cac08360-ab32-4e45-93f2-cb01001419e0" />
+    <UnitTestResult executionId="ef0a123b-1a53-490b-86ed-099957dd383e" testId="897dadd0-5528-b6fe-f76c-424c38d3f5d8" testName="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;*&quot;, operationExpected: Multiply)" computerName="IMARION" duration="00:00:00.0000079" startTime="2022-09-20T16:35:04.5542566+03:00" endTime="2022-09-20T16:35:04.5542567+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef0a123b-1a53-490b-86ed-099957dd383e" />
+    <UnitTestResult executionId="de03a298-ff0d-4092-a835-e7c37830c225" testId="a9e91a99-9906-081b-bee6-b437902b3e66" testName="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;+&quot;, operationExpected: Plus)" computerName="IMARION" duration="00:00:00.0000083" startTime="2022-09-20T16:35:04.5542146+03:00" endTime="2022-09-20T16:35:04.5542146+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de03a298-ff0d-4092-a835-e7c37830c225" />
+    <UnitTestResult executionId="db71af54-6e60-457b-9e26-2ffac35faa95" testId="e60d329e-0d64-b64d-43a0-f701207965c1" testName="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Divide, expectedValue: 3)" computerName="IMARION" duration="00:00:00.0064369" startTime="2022-09-20T16:35:04.5036245+03:00" endTime="2022-09-20T16:35:04.5036641+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db71af54-6e60-457b-9e26-2ffac35faa95" />
+    <UnitTestResult executionId="520b6141-8410-46ba-8d1d-3d244d9dd95c" testId="5e702fb6-03b3-927b-f33a-ca681154737f" testName="Hw1Tests.CalculatorTests.TestInvalidOperation" computerName="IMARION" duration="00:00:00.0007494" startTime="2022-09-20T16:35:04.5540816+03:00" endTime="2022-09-20T16:35:04.5540817+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="520b6141-8410-46ba-8d1d-3d244d9dd95c" />
+    <UnitTestResult executionId="e0c037eb-3912-4e9e-832e-d7889b392b05" testId="a49ebe87-d030-19ab-6fc7-dfe1b366c340" testName="Hw1Tests.ParserTests.TestParserWrongOperation" computerName="IMARION" duration="00:00:00.0050387" startTime="2022-09-20T16:35:04.5093222+03:00" endTime="2022-09-20T16:35:04.5093223+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0c037eb-3912-4e9e-832e-d7889b392b05" />
+    <UnitTestResult executionId="b456065c-3e52-41a6-a455-77c1ace6b389" testId="157132a0-2d73-3d97-627a-d055e418a425" testName="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Plus, expectedValue: 20)" computerName="IMARION" duration="00:00:00.0000052" startTime="2022-09-20T16:35:04.5108437+03:00" endTime="2022-09-20T16:35:04.5108437+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b456065c-3e52-41a6-a455-77c1ace6b389" />
+    <UnitTestResult executionId="84e61994-cb0e-4e94-9f5f-4d415d2f432a" testId="5b4fad60-763d-70b4-2781-a3a056d9bf47" testName="Hw1Tests.CalculatorTests.TestDividingNonZeroByZero" computerName="IMARION" duration="00:00:00.0001855" startTime="2022-09-20T16:35:04.5109397+03:00" endTime="2022-09-20T16:35:04.5109398+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84e61994-cb0e-4e94-9f5f-4d415d2f432a" />
+    <UnitTestResult executionId="56f4874e-03ba-4a94-bacc-dc65ba93c230" testId="2c1f0024-d756-4e7e-c9e9-7b8888655bdc" testName="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;/&quot;, operationExpected: Divide)" computerName="IMARION" duration="00:00:00.0000318" startTime="2022-09-20T16:35:04.5541802+03:00" endTime="2022-09-20T16:35:04.5541802+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56f4874e-03ba-4a94-bacc-dc65ba93c230" />
+    <UnitTestResult executionId="5f796da8-8124-4395-bc7e-4fab90cf0f1f" testId="12cb7f68-9fbb-beb8-e183-c3424965c793" testName="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Minus, expectedValue: 10)" computerName="IMARION" duration="00:00:00.0000268" startTime="2022-09-20T16:35:04.5107659+03:00" endTime="2022-09-20T16:35:04.5107661+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f796da8-8124-4395-bc7e-4fab90cf0f1f" />
+    <UnitTestResult executionId="ef8ce263-ba68-4abe-9f2a-dc96ab3907ac" testId="bd918f5e-7418-beb0-a2e8-1b58f062b58c" testName="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Multiply, expectedValue: 75)" computerName="IMARION" duration="00:00:00.0000066" startTime="2022-09-20T16:35:04.5108120+03:00" endTime="2022-09-20T16:35:04.5108120+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef8ce263-ba68-4abe-9f2a-dc96ab3907ac" />
+    <UnitTestResult executionId="c209bf69-df9c-4122-9a55-dcb4cb5dac93" testId="e0d61420-d4cd-61a4-2f0f-0f6364cec6ba" testName="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;f&quot;, operation: &quot;+&quot;, val2: &quot;3&quot;)" computerName="IMARION" duration="00:00:00.0000422" startTime="2022-09-20T16:35:04.5540321+03:00" endTime="2022-09-20T16:35:04.5540322+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c209bf69-df9c-4122-9a55-dcb4cb5dac93" />
+    <UnitTestResult executionId="4d1e526b-4675-48c7-a57f-ff12e5926ac8" testId="12dcb00f-e534-ae45-87dc-923c427b885c" testName="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;3&quot;, operation: &quot;+&quot;, val2: &quot;f&quot;)" computerName="IMARION" duration="00:00:00.0001013" startTime="2022-09-20T16:35:04.5538401+03:00" endTime="2022-09-20T16:35:04.5538403+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d1e526b-4675-48c7-a57f-ff12e5926ac8" />
+    <UnitTestResult executionId="48d6faea-5080-49ea-b9be-f6fff41b1247" testId="f2a073dd-75dd-052f-7567-dde05c184bd6" testName="Hw1Tests.ParserTests.TestParserWrongLength" computerName="IMARION" duration="00:00:00.0003841" startTime="2022-09-20T16:35:04.5542962+03:00" endTime="2022-09-20T16:35:04.5542963+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48d6faea-5080-49ea-b9be-f6fff41b1247" />
+    <UnitTestResult executionId="0b2e6553-2b6b-465d-930c-97a4f8282022" testId="97da4d17-9eaa-de8b-fee7-2bd8b78fc311" testName="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;a&quot;, operation: &quot;+&quot;, val2: &quot;f&quot;)" computerName="IMARION" duration="00:00:00.0004890" startTime="2022-09-20T16:35:04.5113701+03:00" endTime="2022-09-20T16:35:04.5113701+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b2e6553-2b6b-465d-930c-97a4f8282022" />
+    <UnitTestResult executionId="cf2bdb58-7f7b-4bc3-9f3d-9fdaaf21e5a6" testId="06bc77ea-38d2-c50b-f0d1-5fcb70d98722" testName="Hw1Tests.CalculatorTests.TestDividingZeroByZero" computerName="IMARION" duration="00:00:00.0001070" startTime="2022-09-20T16:35:04.5113160+03:00" endTime="2022-09-20T16:35:04.5113161+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf2bdb58-7f7b-4bc3-9f3d-9fdaaf21e5a6" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Multiply, expectedValue: 75)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="bd918f5e-7418-beb0-a2e8-1b58f062b58c">
+      <Execution id="ef8ce263-ba68-4abe-9f2a-dc96ab3907ac" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestAllOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;-&quot;, operationExpected: Minus)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="f6435553-fecd-a0ce-1346-3c6cc417e1f7">
+      <Execution id="2add1572-9316-4d9e-bf2e-603fd00be056" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestCorrectOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;+&quot;, operationExpected: Plus)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="a9e91a99-9906-081b-bee6-b437902b3e66">
+      <Execution id="de03a298-ff0d-4092-a835-e7c37830c225" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestCorrectOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;f&quot;, operation: &quot;+&quot;, val2: &quot;3&quot;)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="e0d61420-d4cd-61a4-2f0f-0f6364cec6ba">
+      <Execution id="c209bf69-df9c-4122-9a55-dcb4cb5dac93" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserWrongValues" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserUndefinedOperation" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="41e4452c-2bea-a7aa-ee23-05eae9994b8a">
+      <Execution id="f2a29ac0-1d1b-4d6c-8695-f108165d5d3f" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserUndefinedOperation" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestDividingNonZeroByZero" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="5b4fad60-763d-70b4-2781-a3a056d9bf47">
+      <Execution id="84e61994-cb0e-4e94-9f5f-4d415d2f432a" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestDividingNonZeroByZero" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestInvalidOperation" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="5e702fb6-03b3-927b-f33a-ca681154737f">
+      <Execution id="520b6141-8410-46ba-8d1d-3d244d9dd95c" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestInvalidOperation" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Minus, expectedValue: 10)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="12cb7f68-9fbb-beb8-e183-c3424965c793">
+      <Execution id="5f796da8-8124-4395-bc7e-4fab90cf0f1f" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestAllOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Plus, expectedValue: 20)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="157132a0-2d73-3d97-627a-d055e418a425">
+      <Execution id="b456065c-3e52-41a6-a455-77c1ace6b389" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestAllOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;/&quot;, operationExpected: Divide)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="2c1f0024-d756-4e7e-c9e9-7b8888655bdc">
+      <Execution id="56f4874e-03ba-4a94-bacc-dc65ba93c230" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestCorrectOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestAllOperations(value1: 15, value2: 5, operation: Divide, expectedValue: 3)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="e60d329e-0d64-b64d-43a0-f701207965c1">
+      <Execution id="db71af54-6e60-457b-9e26-2ffac35faa95" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestAllOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserWrongOperation" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="a49ebe87-d030-19ab-6fc7-dfe1b366c340">
+      <Execution id="e0c037eb-3912-4e9e-832e-d7889b392b05" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserWrongOperation" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;3&quot;, operation: &quot;+&quot;, val2: &quot;f&quot;)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="12dcb00f-e534-ae45-87dc-923c427b885c">
+      <Execution id="4d1e526b-4675-48c7-a57f-ff12e5926ac8" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserWrongValues" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestDividingZeroByZero" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="06bc77ea-38d2-c50b-f0d1-5fcb70d98722">
+      <Execution id="cf2bdb58-7f7b-4bc3-9f3d-9fdaaf21e5a6" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestDividingZeroByZero" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserWrongLength" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="f2a073dd-75dd-052f-7567-dde05c184bd6">
+      <Execution id="48d6faea-5080-49ea-b9be-f6fff41b1247" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserWrongLength" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestCorrectOperations(operation: &quot;*&quot;, operationExpected: Multiply)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="897dadd0-5528-b6fe-f76c-424c38d3f5d8">
+      <Execution id="ef0a123b-1a53-490b-86ed-099957dd383e" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestCorrectOperations" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.CalculatorTests.TestDividingZeroByNonZero" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="6c7c9f25-5265-c983-8373-889ec0ed368e">
+      <Execution id="cac08360-ab32-4e45-93f2-cb01001419e0" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.CalculatorTests" name="TestDividingZeroByNonZero" />
+    </UnitTest>
+    <UnitTest name="Hw1Tests.ParserTests.TestParserWrongValues(val1: &quot;a&quot;, operation: &quot;+&quot;, val2: &quot;f&quot;)" storage="d:\1_sem_net\dotnet-homeworks-2\homework1\hw1.tests\bin\debug\net6.0\hw1.tests.dll" id="97da4d17-9eaa-de8b-fee7-2bd8b78fc311">
+      <Execution id="0b2e6553-2b6b-465d-930c-97a4f8282022" />
+      <TestMethod codeBase="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\bin\Debug\net6.0\Hw1.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Hw1Tests.ParserTests" name="TestParserWrongValues" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f6435553-fecd-a0ce-1346-3c6cc417e1f7" executionId="2add1572-9316-4d9e-bf2e-603fd00be056" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41e4452c-2bea-a7aa-ee23-05eae9994b8a" executionId="f2a29ac0-1d1b-4d6c-8695-f108165d5d3f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c7c9f25-5265-c983-8373-889ec0ed368e" executionId="cac08360-ab32-4e45-93f2-cb01001419e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="897dadd0-5528-b6fe-f76c-424c38d3f5d8" executionId="ef0a123b-1a53-490b-86ed-099957dd383e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9e91a99-9906-081b-bee6-b437902b3e66" executionId="de03a298-ff0d-4092-a835-e7c37830c225" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e60d329e-0d64-b64d-43a0-f701207965c1" executionId="db71af54-6e60-457b-9e26-2ffac35faa95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e702fb6-03b3-927b-f33a-ca681154737f" executionId="520b6141-8410-46ba-8d1d-3d244d9dd95c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a49ebe87-d030-19ab-6fc7-dfe1b366c340" executionId="e0c037eb-3912-4e9e-832e-d7889b392b05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="157132a0-2d73-3d97-627a-d055e418a425" executionId="b456065c-3e52-41a6-a455-77c1ace6b389" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b4fad60-763d-70b4-2781-a3a056d9bf47" executionId="84e61994-cb0e-4e94-9f5f-4d415d2f432a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c1f0024-d756-4e7e-c9e9-7b8888655bdc" executionId="56f4874e-03ba-4a94-bacc-dc65ba93c230" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12cb7f68-9fbb-beb8-e183-c3424965c793" executionId="5f796da8-8124-4395-bc7e-4fab90cf0f1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd918f5e-7418-beb0-a2e8-1b58f062b58c" executionId="ef8ce263-ba68-4abe-9f2a-dc96ab3907ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0d61420-d4cd-61a4-2f0f-0f6364cec6ba" executionId="c209bf69-df9c-4122-9a55-dcb4cb5dac93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12dcb00f-e534-ae45-87dc-923c427b885c" executionId="4d1e526b-4675-48c7-a57f-ff12e5926ac8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2a073dd-75dd-052f-7567-dde05c184bd6" executionId="48d6faea-5080-49ea-b9be-f6fff41b1247" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97da4d17-9eaa-de8b-fee7-2bd8b78fc311" executionId="0b2e6553-2b6b-465d-930c-97a4f8282022" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06bc77ea-38d2-c50b-f0d1-5fcb70d98722" executionId="cf2bdb58-7f7b-4bc3-9f3d-9fdaaf21e5a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="18" executed="18" passed="18" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.8)&#xD;
+[xUnit.net 00:00:00.63]   Discovering: Hw1.Tests&#xD;
+[xUnit.net 00:00:00.72]   Discovered:  Hw1.Tests&#xD;
+[xUnit.net 00:00:00.72]   Starting:    Hw1.Tests&#xD;
+[xUnit.net 00:00:00.88]   Finished:    Hw1.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
