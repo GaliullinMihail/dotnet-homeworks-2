@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="136" TotalStatements="136" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
+<Root CoveredStatements="116" TotalStatements="116" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
   <FileIndices>
     <File Index="31" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A06FD8858BD120290ECE6AA370BFA22147F7F03982B42442BCD7AAF7E4BBB61C" />
     <File Index="5" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\Hw3.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="0F13208DEB6A0DDD2A990BF0134AC5C9EDE61B802140115ACC4925A7129A6FCC" />
-    <File Index="4" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
+    <File Index="9" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
     <File Index="7" Name="C:\Users\mihai\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="3" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingletonTests.cs" ChecksumAlgorithm="SHA256" Checksum="31770DF4DECAA3305BE65A3F6D088D08B72ABEE4692EEC35ADD075927A37E764" />
-    <File Index="2" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\ConcurrencyTests.cs" ChecksumAlgorithm="SHA256" Checksum="9466CAE979696A3395CFAA5869C3E20B6FCB7EC3B2300314044CD80A00818588" />
+    <File Index="8" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingletonTests.cs" ChecksumAlgorithm="SHA256" Checksum="31770DF4DECAA3305BE65A3F6D088D08B72ABEE4692EEC35ADD075927A37E764" />
+    <File Index="6" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\ConcurrencyTests.cs" ChecksumAlgorithm="SHA256" Checksum="9466CAE979696A3395CFAA5869C3E20B6FCB7EC3B2300314044CD80A00818588" />
     <File Index="13" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
     <File Index="14" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
     <File Index="12" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\StopWatcher.cs" ChecksumAlgorithm="SHA256" Checksum="965F80E3BEEE1218BE7FB53181381369014DFCB57CBACACF84007B2B01CE4A17" />
@@ -25,9 +25,9 @@
     <File Index="25" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework1\Hw1.Tests\obj\Debug\net6.0\Hw1.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A3EFF3226DEE43E725DE78B0B7FF745BD44E99D73FFA9AF6EE5BC2BEDD398DD7" />
     <File Index="26" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\Hw3.Mutex.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="7DE100A04FDA6D5045F74A1EDA0509FC112E70FF2C8639E503BE783B9D2454B7" />
     <File Index="27" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
-    <File Index="28" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\Hw3.Mutex.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
-    <File Index="29" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\WithMutex.cs" ChecksumAlgorithm="SHA256" Checksum="72A5A73E44FF6E6E3316ED91D017F10772F356D16B3C2112617AC39E6B7BA8A9" />
-    <File Index="30" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\Program.cs" ChecksumAlgorithm="SHA256" Checksum="2D7DE049ADE490E7B733DAEE6A9F48759C8B4A6B7DABE1A055CDC1D06999E820" />
+    <File Index="2" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\Hw3.Mutex.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="3" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\WithMutex.cs" ChecksumAlgorithm="SHA256" Checksum="DF0D7F26E295466BCE0855153C0EA6F0C1F2D50BB744BA78559BE347DDAC9F4E" />
+    <File Index="4" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Mutex\Program.cs" ChecksumAlgorithm="SHA256" Checksum="FD80033DE0AF32A0F4844A2D9FFC6534F3B36A74FF7B7EDA1E195EB66DE3F842" />
     <File Index="1" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\Concurrency.cs" ChecksumAlgorithm="SHA256" Checksum="F2C77C0E07894C7F1D70C9932FE0E7144F424ACD22D67619089EF569C98DD5FD" />
   </FileIndices>
   <Assembly Name="Hw3" CoveredStatements="116" TotalStatements="116" CoveragePercent="100">
@@ -217,43 +217,5 @@
         </Method>
       </Type>
     </Namespace>
-  </Assembly>
-  <Assembly Name="Hw3.Mutex" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
-    <Namespace Name="Hw3.Mutex" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-      <Type Name="WithMutex" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-        <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="29" Line="7" Column="5" EndLine="7" EndColumn="69" Covered="True" />
-        </Method>
-        <Method Name=".ctor():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="29" Line="17" Column="5" EndLine="17" EndColumn="23" Covered="True" />
-          <Statement FileIndex="29" Line="18" Column="5" EndLine="18" EndColumn="6" Covered="True" />
-          <Statement FileIndex="29" Line="19" Column="9" EndLine="19" EndColumn="63" Covered="True" />
-          <Statement FileIndex="29" Line="20" Column="9" EndLine="20" EndColumn="37" Covered="True" />
-          <Statement FileIndex="29" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
-        </Method>
-        <Method Name="Dispose():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="29" Line="32" Column="5" EndLine="32" EndColumn="6" Covered="True" />
-          <Statement FileIndex="29" Line="34" Column="9" EndLine="34" EndColumn="23" Covered="True" />
-          <Statement FileIndex="29" Line="36" Column="9" EndLine="36" EndColumn="35" Covered="True" />
-          <Statement FileIndex="29" Line="37" Column="5" EndLine="37" EndColumn="6" Covered="True" />
-        </Method>
-        <Method Name="Increment():System.Int32" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="29" Line="24" Column="5" EndLine="24" EndColumn="6" Covered="True" />
-          <Statement FileIndex="29" Line="25" Column="9" EndLine="25" EndColumn="25" Covered="True" />
-          <Statement FileIndex="29" Line="26" Column="9" EndLine="26" EndColumn="29" Covered="True" />
-          <Statement FileIndex="29" Line="27" Column="9" EndLine="27" EndColumn="23" Covered="True" />
-          <Statement FileIndex="29" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
-        </Method>
-      </Type>
-    </Namespace>
-    <Type Name="Program" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-      <Method Name="&lt;Main&gt;$(System.String[]):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-        <Statement FileIndex="30" Line="4" Column="1" EndLine="4" EndColumn="99" Covered="True" />
-        <Statement FileIndex="30" Line="5" Column="1" EndLine="5" EndColumn="32" Covered="True" />
-        <Statement FileIndex="30" Line="6" Column="1" EndLine="6" EndColumn="107" Covered="True" />
-        <Statement FileIndex="30" Line="7" Column="1" EndLine="7" EndColumn="35" Covered="True" />
-        <Statement FileIndex="30" Line="8" Column="1" EndLine="8" EndColumn="107" Covered="True" />
-      </Method>
-    </Type>
   </Assembly>
 </Root>
