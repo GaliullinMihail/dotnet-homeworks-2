@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using Hw3.Mutex;
-
 Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} {Process.GetCurrentProcess().Id} starts");
 using var wm = new WithMutex();
 Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} {Process.GetCurrentProcess().Id} acquires mutex");
