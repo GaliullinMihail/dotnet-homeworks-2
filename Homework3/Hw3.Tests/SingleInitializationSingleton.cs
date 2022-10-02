@@ -25,6 +25,7 @@ public class SingleInitializationSingleton
 
     internal static void Reset()
     {
+        if (!_isInitialized) return;
         lock (Locker)
             if (_isInitialized)
             {
@@ -44,7 +45,7 @@ public class SingleInitializationSingleton
             lock (Locker)
                 if (!_isInitialized)
                 {
-                    _instance = new(() => new SingleInitializationSingleton());
+                    _instance = new(() => new SingleInitializationSingleton(delay));
                     _isInitialized = true;
                 }
                 else
