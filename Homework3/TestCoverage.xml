@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="143" TotalStatements="143" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
+<Root CoveredStatements="136" TotalStatements="136" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
   <FileIndices>
     <File Index="31" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A06FD8858BD120290ECE6AA370BFA22147F7F03982B42442BCD7AAF7E4BBB61C" />
-    <File Index="2" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\Hw3.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="0F13208DEB6A0DDD2A990BF0134AC5C9EDE61B802140115ACC4925A7129A6FCC" />
-    <File Index="3" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
-    <File Index="4" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\StopWatcher.cs" ChecksumAlgorithm="SHA256" Checksum="CA87F71DE490C3C83658472002E3B478CD36D019D041285D1943BC935859287E" />
-    <File Index="5" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingletonTests.cs" ChecksumAlgorithm="SHA256" Checksum="31770DF4DECAA3305BE65A3F6D088D08B72ABEE4692EEC35ADD075927A37E764" />
-    <File Index="6" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingleton.cs" ChecksumAlgorithm="SHA256" Checksum="E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855" />
+    <File Index="5" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\Hw3.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="0F13208DEB6A0DDD2A990BF0134AC5C9EDE61B802140115ACC4925A7129A6FCC" />
+    <File Index="4" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
     <File Index="7" Name="C:\Users\mihai\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="8" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\ConcurrencyTests.cs" ChecksumAlgorithm="SHA256" Checksum="9466CAE979696A3395CFAA5869C3E20B6FCB7EC3B2300314044CD80A00818588" />
-    <File Index="9" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\Concurrency.cs" ChecksumAlgorithm="SHA256" Checksum="E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855" />
+    <File Index="3" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingletonTests.cs" ChecksumAlgorithm="SHA256" Checksum="31770DF4DECAA3305BE65A3F6D088D08B72ABEE4692EEC35ADD075927A37E764" />
+    <File Index="2" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3.Tests\ConcurrencyTests.cs" ChecksumAlgorithm="SHA256" Checksum="9466CAE979696A3395CFAA5869C3E20B6FCB7EC3B2300314044CD80A00818588" />
     <File Index="13" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
     <File Index="14" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
     <File Index="12" Name="D:\1_sem_Net\dotnet-homeworks-2\Homework3\Hw3\StopWatcher.cs" ChecksumAlgorithm="SHA256" Checksum="965F80E3BEEE1218BE7FB53181381369014DFCB57CBACACF84007B2B01CE4A17" />
@@ -258,20 +255,5 @@
         <Statement FileIndex="30" Line="8" Column="1" EndLine="8" EndColumn="107" Covered="True" />
       </Method>
     </Type>
-  </Assembly>
-  <Assembly Name="Hw3.Tests" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-    <Namespace Name="Hw3.Tests" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-      <Type Name="StopWatcher" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-        <Method Name="Stopwatch(System.Action):System.TimeSpan" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="4" Line="13" Column="5" EndLine="13" EndColumn="6" Covered="True" />
-          <Statement FileIndex="4" Line="14" Column="9" EndLine="14" EndColumn="34" Covered="True" />
-          <Statement FileIndex="4" Line="15" Column="9" EndLine="15" EndColumn="20" Covered="True" />
-          <Statement FileIndex="4" Line="16" Column="9" EndLine="16" EndColumn="18" Covered="True" />
-          <Statement FileIndex="4" Line="17" Column="9" EndLine="17" EndColumn="19" Covered="True" />
-          <Statement FileIndex="4" Line="18" Column="9" EndLine="18" EndColumn="27" Covered="True" />
-          <Statement FileIndex="4" Line="19" Column="5" EndLine="19" EndColumn="6" Covered="True" />
-        </Method>
-      </Type>
-    </Namespace>
   </Assembly>
 </Root>
