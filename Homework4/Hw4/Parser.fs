@@ -22,14 +22,16 @@ let parseOperation (arg : string) =
     | _ -> raise (ArgumentException())
     
 let parseCalcArguments(args : string[]) =
-    if not (isArgLengthSupported(args))
+    if isArgLengthSupported args = false
     then
         raise (ArgumentException())
-    let parse1, value1 = System.Double.TryParse(args[0])
-    let parse2, value2 = System.Double.TryParse(args[2])
-    if not ((parse1 && parse2) = true)
+    let parse1, value1 = Double.TryParse(args[0])
+    let parse2, value2 = Double.TryParse(args[2])
+    
+    if  (parse1 && parse2) = false
     then
         raise (ArgumentException())
+        
     let value3 = parseOperation(args[1])
     {
         arg1 = value1
