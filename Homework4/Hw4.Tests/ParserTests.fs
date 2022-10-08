@@ -49,10 +49,3 @@ let ``Incorrect argument count throws ArgumentException``() =
     // act/assert
     Assert.Throws<ArgumentException>(fun () -> parseCalcArguments args |> ignore)
     
-[<Fact>]
-let ``Undefind operation throws ArgumentOutOfRangeException``() =
-    //arrange
-    let args = [|"3"; "_"; "5"|]
-    //act/assert
-    Assert.Throws<ArgumentOutOfRangeException>(fun () -> parseCalcArguments args |> ignore)
-    

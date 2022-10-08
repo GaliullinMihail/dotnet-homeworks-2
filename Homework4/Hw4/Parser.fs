@@ -18,7 +18,6 @@ let parseOperation (arg : string) =
     | "-" -> CalculatorOperation.Minus
     | "*" -> CalculatorOperation.Multiply
     | "/" -> CalculatorOperation.Divide
-    | "_" -> raise(ArgumentOutOfRangeException())
     | _ -> raise (ArgumentException())
     
 let parseCalcArguments(args : string[]) =
