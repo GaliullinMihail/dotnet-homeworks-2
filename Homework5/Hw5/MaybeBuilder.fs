@@ -3,9 +3,9 @@
 open System
 
 type MaybeBuilder() =
-    member builder.Bind(a, f): Result<'e,'d> =
+    member builder.Bind(a, f) =
         match a with
         | Ok res -> f res
         | Error message ->  Error message
-    member builder.Return x: Result<'a,'b> = Ok x
+    member builder.Return x = Ok x
 let maybe = MaybeBuilder()

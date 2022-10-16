@@ -5,13 +5,15 @@ open Hw5
 
 let success (arg1, operation, arg2) =
     printfn $"{Calculator.calculate arg1 operation arg2}"
-    0
+    Message.SuccessfulExecution
+    
 
-let failure message =
+
+let failure (message) =
     printfn $"{message}"
-    -1
+    message
 
-[<EntryPoint>]
+   
 let main (args: string[]) =
     match Parser.parseCalcArguments args with
     | Ok parsedArgs -> success parsedArgs
