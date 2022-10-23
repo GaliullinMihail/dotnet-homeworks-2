@@ -18,7 +18,7 @@ let calculatorHandler: HttpHandler =
             let! val2 = ctx.GetQueryStringValue "value2"
             let! operation = ctx.GetQueryStringValue "operation"
             let args = [|val1; operation; val2;|]
-            let! calculated  = parseCalcArguments args
+            let! calculated  = parseAndCalc args
             return calculated
             
         }

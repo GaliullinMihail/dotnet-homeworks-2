@@ -34,14 +34,11 @@ let inline isDividingByZero (arg1, operation, arg2) =
     | CalculatorOperation.Divide, 0.0 -> Error "DivideByZero"
     | _ -> Ok (arg1, operation, arg2)
     
-let parseCalcArguments (args: string[]) =
+let parseAndCalc (args: string[]) =
         let result = maybe{
             let! parsedArgs = args |> parseArgs
             let! parsedOperation=  parsedArgs |> isOperationSupported
             let! result = parsedOperation |> isDividingByZero
-            return result
+            return result |||> calculate
         }
-        
-        match result with
-        | Ok parsed -> Ok $"{parsed |||> calculate}"
-        | Error message -> Error $"{message}"
+        result
