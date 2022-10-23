@@ -35,10 +35,9 @@ let inline isDividingByZero (arg1, operation, arg2) =
     | _ -> Ok (arg1, operation, arg2)
     
 let parseAndCalc (args: string[]) =
-        let result = maybe{
+        maybe{
             let! parsedArgs = args |> parseArgs
             let! parsedOperation=  parsedArgs |> isOperationSupported
             let! result = parsedOperation |> isDividingByZero
             return result |||> calculate
         }
-        result

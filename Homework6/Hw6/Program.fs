@@ -20,7 +20,6 @@ let calculatorHandler: HttpHandler =
             let args = [|val1; operation; val2;|]
             let! calculated  = parseAndCalc args
             return calculated
-            
         }
 
         match result with
