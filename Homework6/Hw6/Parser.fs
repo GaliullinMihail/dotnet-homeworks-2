@@ -4,11 +4,6 @@ open System.Globalization
 open System
 open Hw6.Calculator
 open Hw6.MaybeBuilder
-
-let isArgLengthSupported (args:string[]) =
-    match args.Length with
-    | 3 -> Ok args
-    | _ -> Error "WrongArgLength"
     
 [<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>]
 let inline isOperationSupported (arg1, operation, arg2) =
@@ -41,8 +36,7 @@ let inline isDividingByZero (arg1, operation, arg2) =
     
 let parseCalcArguments (args: string[]) =
         let result = maybe{
-            let! lengthArgs = args |> isArgLengthSupported
-            let! parsedArgs = lengthArgs |> parseArgs
+            let! parsedArgs = args |> parseArgs
             let! parsedOperation=  parsedArgs |> isOperationSupported
             let! result = parsedOperation |> isDividingByZero
             return result
