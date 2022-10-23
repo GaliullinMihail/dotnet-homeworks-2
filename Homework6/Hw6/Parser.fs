@@ -35,10 +35,10 @@ let inline isDividingByZero (arg1, operation, arg2) =
     | _ -> Ok (arg1, operation, arg2)
     
 [<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>] 
-let parseAndCalc (args: string[]) =
+let parseArguments (args: string[]) =
         maybe{
             let! parsedArgs = args |> parseArgs
             let! parsedOperation=  parsedArgs |> isOperationSupported
             let! result = parsedOperation |> isDividingByZero
-            return result |||> calculate
+            return result 
         }
