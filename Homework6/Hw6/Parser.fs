@@ -34,6 +34,7 @@ let inline isDividingByZero (arg1, operation, arg2) =
     | CalculatorOperation.Divide, 0.0 -> Error "DivideByZero"
     | _ -> Ok (arg1, operation, arg2)
     
+[<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>] 
 let parseAndCalc (args: string[]) =
         maybe{
             let! parsedArgs = args |> parseArgs
