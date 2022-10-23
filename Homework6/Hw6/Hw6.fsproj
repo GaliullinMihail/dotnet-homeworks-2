@@ -14,13 +14,17 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs" />
-    </ItemGroup>
-
-    <ItemGroup>
+        <Compile Include="Calculator.fs" />
+        <Compile Include="MaybeBuilder.fs" />
+        <Compile Include="Parser.fs" />
         <None Include="web.config" CopyToOutputDirectory="PreserveNewest" />
         <Content Include="WebRoot\**\*">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="settings\appsettings.json" />
+      <Compile Include="Program.fs" />
     </ItemGroup>
 </Project>
