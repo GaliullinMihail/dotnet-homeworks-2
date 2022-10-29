@@ -28,7 +28,7 @@ public class CalculatorController : Controller
         }
         catch (Exception exception)
         {
-            return Ok(exception.Message);
+            return BadRequest(exception.Message);
         }
 
         return Ok(result);
