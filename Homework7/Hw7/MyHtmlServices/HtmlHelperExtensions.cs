@@ -33,7 +33,7 @@ public static class HtmlHelperExtensions
                 if (!validAttribute.IsValid(valueFromModel))
                 {
                     builder.AppendHtmlLine(
-                        $"{GetLabel($"{property.Name}", string.Empty)}<span>{validAttribute.ErrorMessage}</span>");
+                        $"<span>{validAttribute.ErrorMessage}</span>");
                 }
             }
 
