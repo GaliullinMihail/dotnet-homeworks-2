@@ -63,18 +63,15 @@ public static class HtmlHelperExtensions
             property.GetCustomAttribute<DisplayAttribute>());
 
         if (property.PropertyType.IsEnum)
-            return $"{GetLabel($"{name}", labelContent)}<br>{GetSelect(property.PropertyType.GetEnumNames())}<br>";
+            return $"<label for=\"{name}\">{labelContent}</label><br>{GetSelect(property.PropertyType.GetEnumNames())}<br>";
         
         var type = property.PropertyType == typeof(string) ? "text" : "number";
 
-        return $"{GetLabel($"{name}", labelContent)}<br> <input id=\"{name}\" name=\"{name}\" type=\"{type}\">";
+        return $"<label for=\"{name}\">{labelContent}</label><br> <input id=\"{name}\" name=\"{name}\" type=\"{type}\">";
     }
     
     private static string GetSelect(IEnumerable<string> data) =>
         $"<select>{string.Join("", GetOptions(data))}</select>";
-    
-    private static string GetLabel(string name, string content) =>
-        $"<label for=\"{name}\">{content}</label>";
 
     private static IEnumerable<string> GetOptions(IEnumerable<string> data) =>
         data.Select(optionValue => 
