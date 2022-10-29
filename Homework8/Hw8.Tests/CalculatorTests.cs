@@ -13,7 +13,7 @@ public class CalculatorTests
     public void Plus_TwoNumbers_ReturnSum(double val1, double val2, double expResult)
     {
         //arrange
-        ICalculator calculator = null;
+        ICalculator calculator = new Calculator.Calculator();
 
         //act
         var actual = calculator.Plus(val1, val2);
@@ -29,7 +29,7 @@ public class CalculatorTests
     public void Minus_TwoNumbers_ReturnDiff(double val1, double val2, double expResult)
     {
         //arrange
-        ICalculator calculator = null;
+        ICalculator calculator = new Calculator.Calculator();
 
         //act
         var actual = calculator.Minus(val1, val2);
@@ -45,7 +45,7 @@ public class CalculatorTests
     public void Multiply_TwoNumbers_ReturnMultiplication(double val1, double val2, double expResult)
     {
         //arrange
-        ICalculator calculator = null;
+        ICalculator calculator = new Calculator.Calculator();
 
         //act
         var actual = calculator.Multiply(val1, val2);
@@ -60,7 +60,7 @@ public class CalculatorTests
     public void Divide_TwoNumbers_ReturnQuotient(double val1, double val2, double expResult)
     {
         //arrange
-        ICalculator calculator = null;
+        ICalculator calculator = new Calculator.Calculator();
 
         //act
         var actual = calculator.Divide(val1, val2);
@@ -68,11 +68,25 @@ public class CalculatorTests
         //assert
         Assert.Equal(actual, expResult);
     }
+    
+    [Theory]
+    [InlineData(1,Operation.Invalid,3)]
+    [InlineData(2,Operation.Invalid,123)]
+    public void CalculateInvalidOperaiton_ThrowsInvalidOperationException(double val1, Operation operation, double val2)
+    {
+        //arrange
+        ICalculator calculator = new Calculator.Calculator();
+        
+        //act + assert
+        Assert.Throws<InvalidOperationException>(() => { calculator.Calculate(val1, operation, val2); });
+
+    }
 
     [Fact]
-    public void DivideByZero_ThrowsInvalidoperationException()
+    public void DivideByZero_ThrowsInvalidOperationException()
     {
-        ICalculator calculator = null;
+        //arrange
+        ICalculator calculator = new Calculator.Calculator();
 
         //act + assert
         Assert.Throws<InvalidOperationException>(() => { calculator.Divide(1, 0); });
