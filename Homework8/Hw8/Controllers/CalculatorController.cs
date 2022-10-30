@@ -17,13 +17,6 @@ public class CalculatorController : Controller
         try
         {
             parsedData = Parser.Parse(val1, operation, val2);
-        }
-        catch (Exception exception)
-        {
-            return BadRequest(exception.Message);
-        }
-        try
-        {
             result = calculator.Calculate(parsedData.Item1, parsedData.Item2, parsedData.Item3);
         }
         catch (Exception exception)
