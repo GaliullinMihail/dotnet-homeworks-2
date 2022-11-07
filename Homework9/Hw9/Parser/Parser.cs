@@ -30,7 +30,7 @@ public static class Parser
             if (token.IsOperator())
             {
                 if (operatorStack.Count != 0 &&
-                    token.GetPrecedence() < operatorStack.Peek().GetPrecedence())
+                    token.GetPrecedence() <= operatorStack.Peek().GetPrecedence())
                 {
                     CalculatePrevExpression(token, expressionStack, operatorStack);
                 }
