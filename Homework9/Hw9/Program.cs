@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using Hw9.Configuration;
+using Hw9.Parser;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,5 +31,14 @@ app.Run();
 namespace Hw9
 {
     [ExcludeFromCodeCoverage]
-    public partial class Program { }
+    public partial class Program
+    {
+        public static void Main()
+        {
+            // var tokeniser = Tokenizer.ParseToTokens("-8 * (-2 + 2) - 3 * 4");
+            // Console.WriteLine(tokeniser);
+            // Console.WriteLine(MathTokenType.Minus == MathTokenType.OpenBracket);
+            // Console.ReadLine();
+        }
+    }
 }

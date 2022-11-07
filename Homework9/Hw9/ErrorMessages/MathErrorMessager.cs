@@ -3,9 +3,9 @@ namespace Hw9.ErrorMessages;
 public static class MathErrorMessager
 {
     public const string DivisionByZero = "Division by zero";
-    public const string EmptyString =  "Empty string";
-    public const string IncorrectBracketsNumber = "The number of closing and opening brackets does not match";
-    public const string StartingWithOperation =  "An expression cannot start with an operation sign";
+    public const string EmptyString =  "Empty string";//
+    public const string IncorrectBracketsNumber = "The number of closing and opening brackets does not match";//
+    public const string StartingWithOperation =  "An expression cannot start with an operation sign";//
     public const string EndingWithOperation =  "An expression cannot end with an operation sign";
     public const string NotNumber =  "There is no such number";
     public const string UnknownCharacter =  "Unknown character";
