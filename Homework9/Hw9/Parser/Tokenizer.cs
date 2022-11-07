@@ -73,20 +73,22 @@ public static class Tokenizer
         return new MathToken(Number, expression.Substring(previousPos, position - previousPos));
     }
 
-    private static MathToken GetTokenOperator(string part, int position)
+    public static MathToken GetTokenOperator(string part, int position)
         => part[position] switch
         {
             '+' => new MathToken(Plus , "+"),
             '-' => GetTokenMinusOrNegate(part),
             '/' => new MathToken(Divide, "/"),
             '*' => new MathToken(Multiply, "*"),
+            _ => throw new ArgumentOutOfRangeException()
         };
 
-    private static MathToken GetTokenBracket(string part, int position)
+    public static MathToken GetTokenBracket(string part, int position)
         => part[position] switch
         {
             '(' => new MathToken(OpenBracket, "("),
             ')' => new MathToken(CloseBracket, ")"),
+            _ => throw new ArgumentOutOfRangeException()
         };
 
     private static MathToken GetTokenMinusOrNegate(string part) => 

@@ -11,6 +11,7 @@ namespace Hw9.Parser
                 Plus or Minus => 0,
                 Multiply or Divide => 1,
                 Negate => 2,
+                _ => throw new ArgumentOutOfRangeException()
             };
     }
 }
