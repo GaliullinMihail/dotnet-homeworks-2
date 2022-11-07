@@ -48,7 +48,7 @@ public static class Parser
         {
             PushExpression(operatorStack.Pop(), expressionStack);
         }
-        
+
         return expressionStack.Pop();
     }
 
@@ -76,37 +76,37 @@ public static class Parser
         switch (token.Type)
         {
             case Minus:
-                {
-                    var secondValue = expressionStack.Pop();
-                    var firstValue = expressionStack.Pop();
-                    expressionStack.Push(Expression.Subtract(firstValue,secondValue));
-                    break;
-                }
-                case Plus:
-                {
-                    expressionStack.Push(Expression.Add(expressionStack.Pop(), expressionStack.Pop()));
-                    break;
-                }
-                case Multiply:
-                {
-                    expressionStack.Push(Expression.Multiply(expressionStack.Pop(), expressionStack.Pop()));
-                    break;
-                }
-                case Divide:
-                {
-                    var secondValue = expressionStack.Pop();
-                    var firstValue = expressionStack.Pop();
-                    expressionStack.Push(Expression.Divide(firstValue, secondValue));
-                    break;
-                }
-                case Negate:
-                {
-                    expressionStack.Push(Expression.Negate(expressionStack.Pop()));
-                    break;
-                }
+            {
+                var secondValue = expressionStack.Pop();
+                var firstValue = expressionStack.Pop();
+                expressionStack.Push(Expression.Subtract(firstValue, secondValue));
+                break;
+            }
+            case Plus:
+            {
+                expressionStack.Push(Expression.Add(expressionStack.Pop(), expressionStack.Pop()));
+                break;
+            }
+            case Multiply:
+            {
+                expressionStack.Push(Expression.Multiply(expressionStack.Pop(), expressionStack.Pop()));
+                break;
+            }
+            case Divide:
+            {
+                var secondValue = expressionStack.Pop();
+                var firstValue = expressionStack.Pop();
+                expressionStack.Push(Expression.Divide(firstValue, secondValue));
+                break;
+            }
+            case Negate:
+            {
+                expressionStack.Push(Expression.Negate(expressionStack.Pop()));
+                break;
+            }
         }
     }
-    
+
     private static void CheckList(List<MathToken> list)
     {
         if (list[0].IsBinaryOperator())
@@ -121,7 +121,7 @@ public static class Parser
             {
                 CheckTwoOpInRow(list, i);
                 CheckOpBeforeParen(list, i);
-                if (list[i].Type == CloseBracket )
+                if (list[i].Type == CloseBracket)
                 {
                     numberOfOpenBrackets--;
                     if (numberOfOpenBrackets < 0)
@@ -131,30 +131,40 @@ public static class Parser
 
             if (list[i].Type != OpenBracket) continue;
             numberOfOpenBrackets++;
-            CheckOpAfterParen(list,i);
+            CheckOpAfterParen(list, i);
 
         }
 
         if (numberOfOpenBrackets != 0)
+        {
             throw new Exception(IncorrectBracketsNumber);
+        }
     }
 
     private static void CheckOpBeforeParen(List<MathToken> list, int position)
     {
-        if(list[position].Type == CloseBracket && !(list[position - 1].IsNumber() || 
-                                                    list[position-1].Type == CloseBracket || list[position-1].Type == OpenBracket))
-            throw new Exception(OperationBeforeParenthesisMessage(list[position-1].Value));
+        if (list[position].Type == CloseBracket && !(list[position - 1].IsNumber() ||
+                                                     list[position - 1].Type == CloseBracket ||
+                                                     list[position - 1].Type == OpenBracket))
+        {
+            throw new Exception(OperationBeforeParenthesisMessage(list[position - 1].Value));
+        }
     }
+
 
     private static void CheckOpAfterParen(List<MathToken> list, int position)
     {
-        if(list[position].Type == OpenBracket && list[position+1].IsBinaryOperator())
-            throw new Exception(InvalidOperatorAfterParenthesisMessage(list[position+1].Value));
+        if (list[position].Type == OpenBracket && list[position + 1].IsBinaryOperator())
+        {
+            throw new Exception(InvalidOperatorAfterParenthesisMessage(list[position + 1].Value));
+        }
     }
 
     private static void CheckTwoOpInRow(List<MathToken> list, int position)
     {
-        if (list[position-1].IsBinaryOperator() && list[position].IsBinaryOperator())
+        if (list[position - 1].IsBinaryOperator() && list[position].IsBinaryOperator())
+        {
             throw new Exception(TwoOperationInRowMessage(list[position - 1].Value, list[position].Value));
+        }
     }
 }
