@@ -33,12 +33,5 @@ namespace Hw9
     [ExcludeFromCodeCoverage]
     public partial class Program
     {
-        public static void Main()
-        {
-            // var tokeniser = Tokenizer.ParseToTokens("-8 * (-2 + 2) - 3 * 4");
-            // Console.WriteLine(tokeniser);
-            // Console.WriteLine(MathTokenType.Minus == MathTokenType.OpenBracket);
-            // Console.ReadLine();
-        }
     }
 }

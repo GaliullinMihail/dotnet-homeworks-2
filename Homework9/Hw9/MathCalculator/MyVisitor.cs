@@ -13,7 +13,7 @@ public class MyVisitor :ExpressionVisitor
         Dictionary[node] =
             new Lazy<Task<double>>(async () =>
             {
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 await Task.WhenAll(Dictionary[node.Left].Value, Dictionary[node.Right].Value);
                 await Task.Yield();
                 
@@ -27,7 +27,7 @@ public class MyVisitor :ExpressionVisitor
         Dictionary[node] =
             new Lazy<Task<double>>(async () =>
             {
-                await Task.Delay(1000);
+                // await Task.Delay(1000);
                 await Task.WhenAll(Dictionary[node.Operand].Value);
                 await Task.Yield();
                 return Calculate(node, await Dictionary[node.Operand].Value);
@@ -46,18 +46,17 @@ public class MyVisitor :ExpressionVisitor
     }
     
 
-    private double Calculate(Expression expression, params double[] operands) =>
+    private double Calculate(Expression expression, params double[] values) =>
         expression.NodeType switch
         {
-            ExpressionType.Add => operands[0] + operands[1],
-            ExpressionType.Subtract => operands[0] - operands[1],
-            ExpressionType.Multiply => operands[0] * operands[1],
+            ExpressionType.Add => values[0] + values[1],
+            ExpressionType.Subtract => values[0] - values[1],
+            ExpressionType.Multiply => values[0] * values[1],
             ExpressionType.Divide =>
-                operands[1] >= 1e-6 
-                    ? operands[0] / operands[1] 
+                values[1] >= 1e-6 
+                    ? values[0] / values[1] 
                     : throw new DivideByZeroException(MathErrorMessager.DivisionByZero),
-            ExpressionType.Negate => -operands[0],
-            ExpressionType.Constant => (double)((ConstantExpression)expression).Value
+            ExpressionType.Negate => -values[0],
         };
 
     public Dictionary<Expression, Lazy<Task<Double>>> VisitWith(Expression? node)

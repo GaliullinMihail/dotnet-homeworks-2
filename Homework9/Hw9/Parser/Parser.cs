@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System.Globalization;
+using System.Linq.Expressions;
 using static Hw9.ErrorMessages.MathErrorMessager;
 using static Hw9.Parser.MathTokenType;
 
@@ -16,7 +17,7 @@ public static class Parser
         {
             if (token.Type == Number)
             {
-                expressionStack.Push(Expression.Constant(double.Parse(token.Value)));
+                expressionStack.Push(Expression.Constant(double.Parse(token.Value, CultureInfo.InvariantCulture)));
                 continue;
             }
 
