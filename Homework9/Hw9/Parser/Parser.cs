@@ -116,22 +116,22 @@ public static class Parser
 
         var numberOfOpenBrackets = 0;
         for (var i = 0; i < list.Count; i++)
-        {
-            if (i != 0)
-            {
-                CheckTwoOpInRow(list, i);
-                CheckOpBeforeParen(list, i);
-                if (list[i].Type == CloseBracket)
+        { 
+            CheckTwoOpInRow(list, i); 
+            CheckOpBeforeParen(list, i); 
+            if (list[i].Type == CloseBracket)
                 {
                     numberOfOpenBrackets--;
                     if (numberOfOpenBrackets < 0)
                         throw new Exception(IncorrectBracketsNumber);
                 }
+            
+            CheckOpAfterParen(list, i);
+            if (list[i].Type == OpenBracket)
+            {
+                numberOfOpenBrackets++;
             }
 
-            if (list[i].Type != OpenBracket) continue;
-            numberOfOpenBrackets++;
-            CheckOpAfterParen(list, i);
 
         }
 
@@ -143,9 +143,9 @@ public static class Parser
 
     private static void CheckOpBeforeParen(List<MathToken> list, int position)
     {
-        if (list[position].Type == CloseBracket && !(list[position - 1].IsNumber() ||
-                                                     list[position - 1].Type == CloseBracket ||
-                                                     list[position - 1].Type == OpenBracket))
+        if (position > 0 && list[position].Type == CloseBracket && !(list[position - 1].IsNumber() ||
+                                                                     list[position - 1].Type == CloseBracket ||
+                                                                     list[position - 1].Type == OpenBracket))
         {
             throw new Exception(OperationBeforeParenthesisMessage(list[position - 1].Value));
         }
@@ -154,7 +154,7 @@ public static class Parser
 
     private static void CheckOpAfterParen(List<MathToken> list, int position)
     {
-        if (list[position].Type == OpenBracket && list[position + 1].IsBinaryOperator())
+        if (position < list.Count-1 && list[position].Type == OpenBracket && list[position + 1].IsBinaryOperator())
         {
             throw new Exception(InvalidOperatorAfterParenthesisMessage(list[position + 1].Value));
         }
@@ -162,7 +162,7 @@ public static class Parser
 
     private static void CheckTwoOpInRow(List<MathToken> list, int position)
     {
-        if (list[position - 1].IsBinaryOperator() && list[position].IsBinaryOperator())
+        if (position > 0 && list[position - 1].IsBinaryOperator() && list[position].IsBinaryOperator())
         {
             throw new Exception(TwoOperationInRowMessage(list[position - 1].Value, list[position].Value));
         }
