@@ -46,7 +46,7 @@ public class MyVisitor :ExpressionVisitor
     }
     
 
-    private double Calculate(Expression expression, params double[] values) =>
+    public double Calculate(Expression expression, params double[] values) =>
         expression.NodeType switch
         {
             ExpressionType.Add => values[0] + values[1],
@@ -57,6 +57,7 @@ public class MyVisitor :ExpressionVisitor
                     ? values[0] / values[1] 
                     : throw new DivideByZeroException(MathErrorMessager.DivisionByZero),
             ExpressionType.Negate => -values[0],
+            _ => throw new ArgumentOutOfRangeException()
         };
 
     public Dictionary<Expression, Lazy<Task<Double>>> VisitWith(Expression? node)

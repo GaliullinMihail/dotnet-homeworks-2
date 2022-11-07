@@ -1,4 +1,6 @@
-﻿using Hw9.Parser;
+﻿using System.Linq.Expressions;
+using Hw9.MathCalculator;
+using Hw9.Parser;
 using Xunit;
 
 namespace Hw9.Tests;
@@ -22,5 +24,12 @@ public class UnitTests
     {
         Assert.Throws<ArgumentOutOfRangeException>(() =>
             OperatorPrecedence.GetOperatorPrecedence(MathTokenType.Number));
+    }
+
+    [Fact]
+    public void TestMyVisitorCalculateOutOfRange()
+    {
+        Assert.Throws<ArgumentOutOfRangeException>(() =>
+            new MyVisitor().Calculate(Expression.Decrement(Expression.Constant(1))));
     }
 }
