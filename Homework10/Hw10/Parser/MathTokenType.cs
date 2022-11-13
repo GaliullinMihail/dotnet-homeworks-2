@@ -1,6 +1,13 @@
-﻿namespace Hw10.Parser;
+namespace Hw10.Parser;
 
-public class MathTokenType
+public enum MathTokenType
 {
-    
+    Plus,
+    Minus,
+    Divide,
+    Multiply,
+    Negate,
+    OpenBracket,
+    CloseBracket,
+    Number
 }
