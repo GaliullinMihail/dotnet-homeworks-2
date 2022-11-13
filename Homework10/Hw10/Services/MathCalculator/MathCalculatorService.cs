@@ -12,9 +12,9 @@ public class MathCalculatorService : IMathCalculatorService
         try
         {
             
-            var b = Parser.Parser.Parse(expression);
-            var c =  await ExpressionConverter.VisitAsync(b);
-            return new CalculationMathExpressionResultDto(c);
+            var parsedExp = Parser.Parser.Parse(expression);
+            var result =  await ExpressionConverter.VisitAsync(parsedExp);
+            return new CalculationMathExpressionResultDto(result);
         }
         catch (Exception e)
         {
