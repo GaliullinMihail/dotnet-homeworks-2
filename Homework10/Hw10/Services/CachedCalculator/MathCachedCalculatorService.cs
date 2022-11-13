@@ -18,9 +18,12 @@ public class MathCachedCalculatorService : IMathCalculatorService
 	public async Task<CalculationMathExpressionResultDto> CalculateMathExpressionAsync(string? expression)
 	{
 		var alreadyCalculated =  await _dbContext.SolvingExpressions.FirstOrDefaultAsync(solving => solving.Expression == expression);
-		
+
 		if (alreadyCalculated != null)
+		{
+			await Task.Delay(1000);
 			return new CalculationMathExpressionResultDto(alreadyCalculated.Result);
+		}
 
 		var calcExpDto = await _simpleCalculator.CalculateMathExpressionAsync(expression);
 

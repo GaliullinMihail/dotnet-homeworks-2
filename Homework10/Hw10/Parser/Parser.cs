@@ -64,7 +64,7 @@ public static class Parser
     private static void CalculatePrevExpression(MathToken token, Stack<Expression> expressionStack,
         Stack<MathToken> operatorStack)
     {
-        while (operatorStack.Count != 0 && token.GetPrecedence() < operatorStack.Peek().GetPrecedence())
+        while (operatorStack.Count != 0 && token.GetPrecedence() <= operatorStack.Peek().GetPrecedence())
         {
             PushExpression(operatorStack.Pop(), expressionStack);
         }
