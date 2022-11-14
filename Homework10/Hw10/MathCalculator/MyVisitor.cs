@@ -27,7 +27,6 @@ public class MyVisitor :ExpressionVisitor
             { 
                 await Task.Delay(1000);
                 await Task.WhenAll(Dictionary[node.Operand].Value);
-                await Task.Yield();
                 return Calculate(node, await Dictionary[node.Operand].Value);
             });
         return base.VisitUnary(node);
