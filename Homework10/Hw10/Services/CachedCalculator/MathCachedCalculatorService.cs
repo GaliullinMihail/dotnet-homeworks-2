@@ -29,7 +29,11 @@ public class MathCachedCalculatorService : IMathCalculatorService
 
 		if (!calcExpDto.IsSuccess) return calcExpDto;
 		
-		_dbContext.SolvingExpressions.Add(new SolvingExpression(expression, calcExpDto.Result));
+		_dbContext.SolvingExpressions.Add(new SolvingExpression
+            {
+                Expression = expression,
+                Result = calcExpDto.Result
+            });
 
 		await _dbContext.SaveChangesAsync();
 
