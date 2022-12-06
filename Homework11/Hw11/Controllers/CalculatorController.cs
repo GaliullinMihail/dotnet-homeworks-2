@@ -34,7 +34,7 @@ public class CalculatorController : Controller
         }
         catch (Exception e)
         {
-            _exceptionHandler.HandleException(e);
+            _exceptionHandler.HandleException((dynamic) e);
             return Json(new CalculationMathExpressionResultDto(e.Message));
         }
     }
