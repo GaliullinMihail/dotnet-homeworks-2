@@ -2,6 +2,7 @@
 using static Hw11.ErrorMessages.MathErrorMessager;
 using System.Globalization;
 using System.Linq.Expressions;
+using Hw11.Exceptions;
 
 namespace Hw11.Parser;
 
@@ -110,9 +111,9 @@ public static class Parser
     private static void CheckList(List<MathToken> list)
     {
         if (list[0].IsBinaryOperator())
-            throw new Exception(StartingWithOperation);
+            throw new InvalidSyntaxException(StartingWithOperation);
         if (list[^1].IsBinaryOperator())
-            throw new Exception(EndingWithOperation);
+            throw new InvalidSyntaxException(EndingWithOperation);
 
         var numberOfOpenBrackets = 0;
         for (var i = 0; i < list.Count; i++)
@@ -123,7 +124,7 @@ public static class Parser
                 {
                     numberOfOpenBrackets--;
                     if (numberOfOpenBrackets < 0)
-                        throw new Exception(IncorrectBracketsNumber);
+                        throw new InvalidSyntaxException(IncorrectBracketsNumber);
                 }
             
             CheckOpAfterParen(list, i);
@@ -137,7 +138,7 @@ public static class Parser
 
         if (numberOfOpenBrackets != 0)
         {
-            throw new Exception(IncorrectBracketsNumber);
+            throw new InvalidSyntaxException(IncorrectBracketsNumber);
         }
     }
 
@@ -147,7 +148,7 @@ public static class Parser
                                                                      list[position - 1].Type == CloseBracket ||
                                                                      list[position - 1].Type == OpenBracket))
         {
-            throw new Exception(OperationBeforeParenthesisMessage(list[position - 1].Value));
+            throw new InvalidSyntaxException(OperationBeforeParenthesisMessage(list[position - 1].Value));
         }
     }
 
@@ -156,7 +157,7 @@ public static class Parser
     {
         if (position < list.Count-1 && list[position].Type == OpenBracket && list[position + 1].IsBinaryOperator())
         {
-            throw new Exception(InvalidOperatorAfterParenthesisMessage(list[position + 1].Value));
+            throw new InvalidSyntaxException(InvalidOperatorAfterParenthesisMessage(list[position + 1].Value));
         }
     }
 
@@ -164,7 +165,7 @@ public static class Parser
     {
         if (position > 0 && list[position - 1].IsBinaryOperator() && list[position].IsBinaryOperator())
         {
-            throw new Exception(TwoOperationInRowMessage(list[position - 1].Value, list[position].Value));
+            throw new InvalidSyntaxException(TwoOperationInRowMessage(list[position - 1].Value, list[position].Value));
         }
     }
 }

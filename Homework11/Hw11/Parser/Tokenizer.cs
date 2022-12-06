@@ -1,4 +1,5 @@
-﻿using static Hw11.ErrorMessages.MathErrorMessager;
+﻿using Hw11.Exceptions;
+using static Hw11.ErrorMessages.MathErrorMessager;
 using static Hw11.Parser.MathTokenType;
 namespace Hw11.Parser;
 
@@ -34,7 +35,7 @@ public static class Tokenizer
                 
                 else
                 {
-                    throw new Exception(UnknownCharacterMessage(part[position]));
+                    throw new InvalidSymbolException(UnknownCharacterMessage(part[position]));
                 }
             }
 
@@ -67,7 +68,7 @@ public static class Tokenizer
         }
 
         if (position < expression.Length && !IsBracket(expression[position]))
-            throw new Exception(NotNumberMessage(expression));
+            throw new InvalidNumberException(NotNumberMessage(expression));
 
         return new MathToken(Number, expression.Substring(previousPos, position - previousPos));
     }
