@@ -13,7 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Homework10\Hw10.Tests\Hw10.Tests.csproj" />
       <ProjectReference Include="..\..\Homework10\Hw10\Hw10.csproj" />
       <ProjectReference Include="..\..\Homework1\Hw1.Tests\Hw1.Tests.csproj" />
       <ProjectReference Include="..\..\Homework1\Hw1\Hw1.csproj" />
@@ -28,7 +27,6 @@
       <ProjectReference Include="..\..\Homework6\Hw6.Tests\Hw6Tests.csproj" />
       <ProjectReference Include="..\..\Homework6\Hw6\Hw6.fsproj" />
       <ProjectReference Include="..\..\Homework8\Hw8.Tests\Hw8.Tests.csproj" />
-      <ProjectReference Include="..\..\Homework8\Hw8\Hw8.csproj" />
     </ItemGroup>
 
 </Project>

@@ -18,13 +18,16 @@ public class MathCachedCalculatorService : IMathCalculatorService
 
 	public async Task<CalculationMathExpressionResultDto> CalculateMathExpressionAsync(string? expression)
 	{
-		var alreadyCalculated = _cache.Get<double?>(expression);
-
-		if (alreadyCalculated != null)
+		if (expression != null)
 		{
-			return new CalculationMathExpressionResultDto(alreadyCalculated.Value);
-		}
+			var alreadyCalculated = _cache.Get<double?>(expression);
 
+			if (alreadyCalculated != null)
+			{
+				return new CalculationMathExpressionResultDto(alreadyCalculated.Value);
+			}
+		}
+		
 		var calcExpDto = await _simpleCalculator.CalculateMathExpressionAsync(expression);
 
 		if (!calcExpDto.IsSuccess) return calcExpDto;

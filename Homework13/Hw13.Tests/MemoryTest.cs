@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Text;
 using JetBrains.dotMemoryUnit;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -15,7 +14,7 @@ public class MemoryTest : IClassFixture<WebApplicationFactory<Program>>
     private readonly HttpClient _client;
     private readonly ITestOutputHelper _output;
 
-    public MemoryTest(WebApplicationFactory<MemoryTest> factory, ITestOutputHelper output)
+    public MemoryTest(WebApplicationFactory<Program> factory, ITestOutputHelper output)
     {
         _output = output;
         DotMemoryUnitTestOutput.SetOutputMethod(_output.WriteLine);
