@@ -4,13 +4,13 @@ using System.Net.Http;
 using System.Text;
 using JetBrains.dotMemoryUnit;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Xunit;
 using Xunit.Abstractions;
 
 namespace Hw13.Tests;
 
-public class MemoryTest : IClassFixture<WebApplicationFactory<MemoryTest>>
-    // TODO: replace MemoryTest with the right generic argument
+public class MemoryTest : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
     private readonly ITestOutputHelper _output;

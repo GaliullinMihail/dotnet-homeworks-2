@@ -15,8 +15,6 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Homework10\Hw10.Tests\Hw10.Tests.csproj" />
       <ProjectReference Include="..\..\Homework10\Hw10\Hw10.csproj" />
-      <ProjectReference Include="..\..\Homework11\Hw11.Tests\Hw11Tests.csproj" />
-      <ProjectReference Include="..\..\Homework11\Hw11\Hw11.csproj" />
       <ProjectReference Include="..\..\Homework1\Hw1.Tests\Hw1.Tests.csproj" />
       <ProjectReference Include="..\..\Homework1\Hw1\Hw1.csproj" />
       <ProjectReference Include="..\..\Homework3\Hw3.Mutex\Hw3.Mutex.csproj" />
@@ -29,12 +27,8 @@
       <ProjectReference Include="..\..\Homework6\Hw6.Client\Hw6.Client.fsproj" />
       <ProjectReference Include="..\..\Homework6\Hw6.Tests\Hw6Tests.csproj" />
       <ProjectReference Include="..\..\Homework6\Hw6\Hw6.fsproj" />
-      <ProjectReference Include="..\..\Homework7\Hw7.Tests\Hw7.Tests.csproj" />
-      <ProjectReference Include="..\..\Homework7\Hw7\Hw7.csproj" />
       <ProjectReference Include="..\..\Homework8\Hw8.Tests\Hw8.Tests.csproj" />
       <ProjectReference Include="..\..\Homework8\Hw8\Hw8.csproj" />
-      <ProjectReference Include="..\..\Homework9\Hw9.Tests\Hw9.Tests.csproj" />
-      <ProjectReference Include="..\..\Homework9\Hw9\Hw9.csproj" />
     </ItemGroup>
 
 </Project>

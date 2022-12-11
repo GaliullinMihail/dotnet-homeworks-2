@@ -13,7 +13,6 @@ public class Visitor
         dictionary[node] =
             new Lazy<Task<double>>(async () =>
             {
-                await Task.Delay(1000);
                 await Task.WhenAll(dictionary[node.Left].Value, dictionary[node.Right].Value);
 
                 return Calculate(node, await dictionary[node.Left].Value, await dictionary[node.Right].Value);
@@ -28,8 +27,7 @@ public class Visitor
     {
         dictionary[unaryExpression] =
             new Lazy<Task<double>>(async () =>
-            { 
-                await Task.Delay(1000);
+            {
                 await Task.WhenAll(dictionary[unaryExpression.Operand].Value);
                 return Calculate(unaryExpression, await dictionary[unaryExpression.Operand].Value);
             });
