@@ -16,10 +16,7 @@ public class Program
         builder.Services
             .AddMathCalculator()
             .AddCachedMathCalculator();
-
-        builder.Services.AddDbContext<ApplicationContext>(options =>
-            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+        
         var app = builder.Build();
         if (!app.Environment.IsDevelopment())
         {

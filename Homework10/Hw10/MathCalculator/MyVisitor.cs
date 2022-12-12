@@ -12,7 +12,6 @@ public class MyVisitor :ExpressionVisitor
         Dictionary[node] =
             new Lazy<Task<double>>(async () =>
             {
-                await Task.Delay(1000);
                 await Task.WhenAll(Dictionary[node.Left].Value, Dictionary[node.Right].Value);
 
                 return Calculate(node, await Dictionary[node.Left].Value, await Dictionary[node.Right].Value);
@@ -24,8 +23,7 @@ public class MyVisitor :ExpressionVisitor
     {
         Dictionary[node] =
             new Lazy<Task<double>>(async () =>
-            { 
-                await Task.Delay(1000);
+            {
                 await Task.WhenAll(Dictionary[node.Operand].Value);
                 return Calculate(node, await Dictionary[node.Operand].Value);
             });
